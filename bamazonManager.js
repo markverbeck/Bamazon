@@ -59,6 +59,7 @@ var anotherCommand = function(){
 		]).then(function(answer){
 			if(answer.confirm === true){
 				menueChoices();
+
 			}else{
 				console.log("");
 				console.log("Logging Out..");
@@ -167,14 +168,15 @@ var addNew = function(){
 			var info = name, department, price, inventory;
 			var sql = "INSERT INTO products (product_name, department_name, price, stock_quantity) VALUES('" + name + "', '" + department + "', '" + price + "', '" + inventory + "')";
 
-			connection.connect(function(err){
-				if(err) throw err;
+			
 				connection.query(sql, function(err, results, fields){
 					if(err) throw err;
 					console.log("1 record inserted");
+
+					
 				});
-			});
 			anotherCommand();
+			
 		})
 		
 }
