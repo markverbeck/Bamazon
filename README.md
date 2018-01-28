@@ -21,7 +21,7 @@ Once the customer has placed the order, your application should check if your st
 Manager.
 
 List a set of menu options:
-View Products for Sale
-View Low Inventory
-Add to Inventory
-Add New Product
+View Products for Sale,
+View Low Inventory,
+Add to Inventory,
+Add New Product.
